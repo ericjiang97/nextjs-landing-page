@@ -2,12 +2,13 @@ import Head from "next/head";
 
 import HeaderComponent from "../components/Header";
 import LinkCard from "../components/LinkCard";
+import links from "../config/links";
 
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
   return (
-    <div class="min-h-screen bg-gray-100">
+    <div className="min-h-screen">
       <HeaderComponent />
       <div className={styles.container}>
         <Head>
@@ -15,14 +16,11 @@ export default function Home() {
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
-        <main class="w-full">
-          <div class="max-w-7xl mx-auto pb-12 px-4 sm:px-6 lg:px-8">
-            <LinkCard
-              link={{
-                name: "Hello",
-                url: "https://ericjiang.dev",
-              }}
-            />
+        <main className="w-full bg-white">
+          <div className="max-w-7xl mx-auto p-4">
+            {links.map((link, i) => {
+              return <LinkCard link={link} key={i} />;
+            })}
           </div>
         </main>
         <footer className={styles.footer}>
