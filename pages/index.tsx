@@ -4,15 +4,13 @@ import Footer from "../components/Footer";
 import HeaderComponent from "../components/Header";
 import LinkCard from "../components/LinkCard";
 
-import styles from "../styles/Home.module.css";
-
 import links from "../config/links";
 
 export default function Home() {
   return (
-    <div>
+    <div className="min-h-screen flex flex-col">
       <HeaderComponent />
-      <div className={styles.container}>
+      <div className="flex-1">
         <Head>
           <title>Create Next App</title>
           <link rel="icon" href="/favicon.ico" />
