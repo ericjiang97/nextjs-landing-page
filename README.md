@@ -1,5 +1,7 @@
 ## nextjs-landing-page
 
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/ericjiang97/nextjs-landing-page)
+
 This is a template page used for sharing links for personal use.
 
 To set this up for your website, simply edit the following files:
