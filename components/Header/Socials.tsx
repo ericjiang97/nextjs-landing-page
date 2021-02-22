@@ -39,7 +39,7 @@ const SocialsFragment = () => {
       )}
       {about.socials.linkedin && (
         <a
-          href={`https://linkedin.com/${about.socials.linkedin}`}
+          href={`https://linkedin.com/in/${about.socials.linkedin}`}
           className="text-gray-400 hover:text-gray-300 flex"
         >
           <svg
