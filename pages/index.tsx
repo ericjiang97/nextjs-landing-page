@@ -17,6 +17,10 @@ export default function Home() {
             process.env.NODE_ENV != "production" && "[DEV]"
           }Landing Page for ${about.me.name}`}</title>
           <link rel="icon" href="/favicon.ico" />
+          <script
+            src="https://kit.fontawesome.com/38836da0c2.js"
+            crossOrigin="anonymous"
+          ></script>
         </Head>
 
         <main className="w-full bg-white flex-1">

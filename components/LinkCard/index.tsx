@@ -8,8 +8,9 @@ const LinkCard: React.FC<LinkCardProps> = ({ link }) => {
       <div className="max-w-md mx-auto my-3 rounded-xl shadow-md overflow-hidden min-w-full md:max-w-2xl ring-2 border-grey-300 border-solid border-1">
         <div className="md:flex">
           <div className="p-8 flex-1">
-            <div className="text-center tracking-wide text-xl  text-indigo-500 font-semibold">
-              {link.name}
+            <div className="text-center tracking-wide text-xl  text-indigo-500 font-semibold flex items-center justify-center">
+              {link.icon && <i aria-hidden className={`${link.icon} mr-1`}></i>}
+              <span>{link.name}</span>
             </div>
           </div>
         </div>
