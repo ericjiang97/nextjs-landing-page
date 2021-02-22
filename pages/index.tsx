@@ -13,7 +13,9 @@ export default function Home() {
       <HeaderComponent />
       <div className="flex-1">
         <Head>
-          <title>{`Landing Page for ${about.me.name}`}</title>
+          <title>{`${
+            process.env.NODE_ENV != "production" && "[DEV]"
+          }Landing Page for ${about.me.name}`}</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 
