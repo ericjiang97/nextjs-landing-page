@@ -9,6 +9,12 @@ const Footer = () => {
         <p className="mt-8 text-center text-base text-gray-400">
           Copyright &copy;{` ${new Date().getFullYear()} ${about.me.name}`}.
         </p>
+        <p className="mt-8 text-center text-base text-gray-400">
+          Built with <a href="https://nextjs.org/">NextJS</a>,{" "}
+          <a href="https://tailwindcss.com">Tailwind</a> &amp;{" "}
+          <a href="https://fontawesome.com">FontAwesome</a>. Powered by{" "}
+          <a href="https://vercel.com">Vercel</a>
+        </p>
       </div>
     </footer>
   );
