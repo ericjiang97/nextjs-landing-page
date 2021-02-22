@@ -3,6 +3,7 @@ import Head from "next/head";
 import Footer from "../components/Footer";
 import HeaderComponent from "../components/Header";
 import LinkCard from "../components/LinkCard";
+import about from "../config/about";
 
 import links from "../config/links";
 
@@ -12,7 +13,7 @@ export default function Home() {
       <HeaderComponent />
       <div className="flex-1">
         <Head>
-          <title>Create Next App</title>
+          <title>{`Landing Page for ${about.me.name}`}</title>
           <link rel="icon" href="/favicon.ico" />
         </Head>
 

@@ -2,6 +2,10 @@ const links: Link[] = [
   {
     url: "https://ericjiang.dev",
     name: "Website",
+    icon: {
+      type: "fas",
+      name: "globe",
+    },
   },
   {
     url: "https://photos.ericjiang.dev",
