@@ -17,6 +17,12 @@ config/page.ts
 config/links.ts
 ```
 
+## Configuring the Site
+
+### Profile Configuration
+
+The social profile is configured
+
 ## LICENSE
 
 This repo is licensed under `MIT`. See [./LICENSE](./LICENSE) for more details

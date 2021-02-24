@@ -14,7 +14,7 @@ export default function Home() {
       <div className="flex-1">
         <Head>
           <title>{`${
-            process.env.NODE_ENV != "production" && "[DEV]"
+            process.env.NODE_ENV != "production" ? "[DEV]" : ""
           }Landing Page for ${about.me.name}`}</title>
           <link rel="icon" href="/favicon.ico" />
           <script
